@@ -1,0 +1,27 @@
+.Recipe{
+    display:flex;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    gap: 2rem;
+  
+    &__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        justify-content: center;
+        row-gap: 3rem;
+        column-gap:   2%;
+    
+    .proBox{
+        width: 22%;
+        height: auto;
+        text-align: start;
+    }
+}
+&__titleBar{
+text-align: center;
+}
+
+}

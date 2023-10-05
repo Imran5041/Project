@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Mulish', 'Poppins', 'Roboto',sans-serif;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  
+}
+._ptr{
+  cursor: pointer;
+}
+._txt{
+  text-align: center;
+  padding: 30px;
+
+
+}
+._headerText{
+  font-family: "mulish";
+  font-weight: 800;
+  color: #C42731;
+  font-size: 35px; 
+  margin-top: 0%;
+  
+}
+
+
+
+._box{
+  justify-content: center;
+  background-color: #FFDFE2;
+  margin-top: -37px;
+  padding-top: 32px;
+  padding-bottom: 50px;
+}
+._spacing{
+  gap: 110px;
+  display: flex;
+  margin-bottom: 35px;
+  
+}
+._footer{
+  padding: 1% 20px;
+}
+._container{
+  padding: 10px 2px;
+}
+
+@media(max-width:768px){
+  ._spacing{
+    gap: 80px;
+  }
+  @media(max-width: 690px){
+
+    ._spacing{
+      gap: 50px;
+    }
+  }
+  @media(max-width: 500px){
+
+    ._spacing{
+      gap: 20px;
+    }
+  }
+  @media(max-width: 350px){
+
+    ._spacing{
+      gap: 10px;
+    }
+  }
+
+
+}
+
+
+

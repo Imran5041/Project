@@ -1,0 +1,157 @@
+.HomePage{
+  
+    justify-content: center;
+    width: auto;
+  
+    &__logo2{
+        text-align: center;
+        margin-top: 80px;
+
+        img{
+            width: 30px;
+        }
+        h2{
+            font-family: "mulish";
+            font-weight: 800;
+            color: #121111d8;
+            position: relative;
+            font-size: 40px;
+            top: 120px;
+        }
+        
+    }
+    &__logo{
+        text-align: center;
+        img{
+            width: 30px;
+            margin-top: 20px;
+        }
+     
+        h1{
+            font-family: "mulish";
+            font-weight: 800;
+            color: #C42731;
+            position: relative;
+            font-size: 40px;
+            top: 10px;
+        }
+   
+    }
+    &__best{
+        margin-top: 50px;
+        button{
+            text-align: center;
+            justify-content: center;
+        }
+    }
+    .imran{
+        position: relative;
+        bottom: -45px;
+    }
+    .imrank{
+        position: relative;
+        bottom: -155px;
+    }
+  &__fillRed button{
+    width: 242px;
+    height: 49px;
+    margin-top: 40px;
+  }
+  
+  .btn{
+    background-color: #C42731;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-family: "mulish";
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .recipe{
+    color: #000;
+    font-weight: 600;
+    font-family: "mulish";
+  }
+
+  .logo {
+    width: 30px;
+    height: 26px;
+    background-image: url("../../../public/photos/icon5.png"); /* Replace with your logo image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+    margin-left: 49%;
+  }
+  
+  
+  .logo::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: calc(100% - 5px); /* Adjust the width for the lines based on the logo width */
+    height: 2px; /* Adjust the line height as needed */
+    background-color: #C42731; /* Adjust the line color as needed */
+    transform: translateY(-50%);
+  
+  }
+  .logo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: calc(100% - 5px); /* Adjust the width for the lines based on the logo width */
+    height: 2px; /* Adjust the line height as needed */
+    background-color: #C42731; 
+    transform: translateY(-50%);
+  
+  }
+  
+  // .logo::before {
+  //   left: 20%;
+  // }
+  
+  // .logo::after {
+  //   right: 0;
+  // }
+  
+
+
+  @media (max-width:1520px){
+    h1::after{
+        display: none;
+    }
+    h1::before{
+        display: none;
+    }
+  }
+  @media(max-width:970px){
+    h1{
+        font-size: 46px;
+        top: 2px;
+      
+    }
+    .imran{
+      display: none;
+    }
+  }
+  @media(max-width:600px){
+    h1{
+        
+        font-size: 36px;
+    }
+  }
+  @media(max-width: 390px){
+    h1{
+        font-size: 25px;
+       
+    }
+  }
+
+ @media(max-width: 410px){
+  .btn{
+    font-size: 10px;
+  }
+ }
+}

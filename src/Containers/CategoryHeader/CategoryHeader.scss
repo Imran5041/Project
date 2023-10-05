@@ -1,0 +1,104 @@
+@import "../../Utiles/Styles/variables.scss";
+.CategoryHeader
+{
+width: 100%;
+display: flex;
+justify-content: center;
+text-align: center;
+gap: 1rem;
+background-color: $colorBack;
+
+&__catBox{
+    
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    
+    padding: 1rem;
+    img{
+        width: 90px;
+        height: 90px;
+        border: 2px solid $colorWhite;
+        border-radius: 10px;
+        background-color: $colorWhite;
+        padding: 5px;
+    }
+}
+p{
+    font-size: 1rem;
+    font-family: $mulishFont;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+       //Media Query Start//
+
+       @media (max-width:768px){
+        &__catBox{
+            display: flex;
+        
+            padding: 5px;  
+    
+        }
+        img{
+            text-align: center;
+            width: 50px;
+            height: 90px;
+            margin-left: -32px;
+        }
+   
+    }
+    @media (max-width:600px){
+        flex-wrap: wrap;
+        img{
+            text-align: center;
+            width: 10px;
+            height: 50px;
+        }
+    }
+@media (max-width: 1390px) {
+  
+   .icon{
+    width: 80px;
+justify-content: center;
+   }
+}
+@media (max-width: 1225px){
+    .icon{
+        width: 60px;
+    justify-content: center;
+       }
+}
+@media (max-width:1105px){
+    .icon{
+        width: 40px;
+    justify-content: center;
+    img{
+        width: 70px;
+        height: 70px;
+    }
+       }
+ 
+}
+@media (max-width:960px){
+ 
+  
+    .icon{
+        width: 20px;
+    justify-content: center;
+    
+ 
+ 
+   
+       }
+ 
+}
+
+
+}

@@ -1,0 +1,70 @@
+@import "../../Utiles/Styles/variables.scss";
+.Seller{
+    display: flex;
+ width: 100%;
+max-width: 100%;
+text-align: center;
+justify-content: center;
+
+&__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+    row-gap: 3rem;
+    column-gap:   2%;
+    .proBox{
+        width: 22%;
+        height: auto;
+    }
+    .ContentBox__rightText{
+        color: rgb(36, 237, 183);
+        font-size: 1rem;
+    }
+ 
+}     
+    // Media Query Start//
+
+    @media (max-width: 450px) {
+        .Seller {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+        }
+    
+        .Seller__container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 3rem;
+            column-gap: 2%;
+        }
+    
+        .proBox {
+            width: 100%; 
+            height: auto;
+        }
+    
+        .ContentBox__rightText {
+            color: rgb(36, 237, 183);
+            font-size: 1rem;
+        }
+    
+        .ContentBox__container {
+            flex-wrap: wrap; 
+            background-color: chartreuse;
+        }
+    
+        img {
+            text-align: center;
+            width: 100%;
+            height:20%;
+        }
+    }
+       
+}

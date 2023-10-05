@@ -1,0 +1,139 @@
+@import "../../Utiles/Styles/variables.scss";
+.ProductCard{
+    width: 100%;
+    min-height: 20vh;
+    background-color: $colorWhite;
+    border-radius: 10px;
+    border: 2px solid $colorWhite;
+    button{
+        width: 45%;
+        height: 31px;
+        text-align: end;
+        background-color: $colorWhite;
+        text-align: center;
+        color: $colorRed;
+        border-radius: 20px;
+        border: 3px solid $colorRed;
+        font-size: 14px;
+        float: right;
+    }
+    &__imageBox{
+        display: flex;
+        img{
+            width: 100%;
+            height: 45vh;
+            
+        }
+    }
+    .ContentBox{
+   text-align: left;
+   padding: 0.2rem;
+   display: flex;
+
+   p {
+    margin: 0.2rem;
+    font-size: 23px;
+  }
+
+.leftText{
+    font-family: $mulishFont;
+    font-weight: 700;
+    
+    color: $colorRed;
+   display: flex;
+    
+}
+p{
+    font-size: 25px;
+}
+.rightText{
+    
+    color: $colorBlack;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+    }
+    &__stars{
+        text-align: left;
+        color: $colorRed;
+        font-size: 1.5rem;
+        
+        span{
+            margin: 0px 2px;
+
+        }
+    }
+    .PriceBox{
+        font-size: 1rem;
+      
+        font-size: 0.9rem;
+        display: inline-flex;
+        float: left;
+        align-items: baseline;
+        
+        &__oldPrice{
+            font-size: 1rem;
+            color: $colorGray;
+            text-decoration: line-through;
+            font-weight: 800;
+        }
+        &__newPrice{
+            color: $colorRed;
+            font-size: 1rem;
+            font-weight: 800;
+        }
+
+        .btn{
+            width: 100%;
+            background-color: aqua;
+        }
+    }
+
+p {
+        font-size: 17px;
+        width: 100%;
+        @supports (-webkit-line-clamp: 2) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: initial;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          text-align: left;
+        }
+      }
+      @media(max-width: 768px){
+
+        .ContentBox p{
+            font-size: 15px;
+        }
+        &__stars{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 12px;
+        }
+        button{
+            width: 100%;
+        }
+     
+      }
+      @media(max-width: 450px){
+        .ContentBox p{
+            font-size: 25px;
+        }
+        &__stars{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 18px;
+        }
+        button{
+            width: 100%;
+        }
+       
+    }
+}
+ 
+   

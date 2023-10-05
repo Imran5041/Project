@@ -1,0 +1,198 @@
+@import "../../Utiles/Styles/variables.scss";
+.About{
+    
+    &__title{
+        h4{
+            color: $colorBlack;
+            font-size: 25px;
+            margin-left: 75px;
+            font-family: $mulishFont;
+            font-weight: 700;
+        }
+        h2{
+            color: $colorRed;
+            font-size: 79px;
+            margin-left: 75px;
+            font-family:$mulishFont;
+            font-weight: 800;
+            
+        }
+        p{
+            color: $colorBlack;
+            font-size: 19px;
+            margin-left: 75px;
+            font-family: $mainFont;
+            font-weight: 300;
+        }
+    }
+    &__pic{
+
+  position: absolute;
+  right: 80px;
+  
+  top: 1254px;
+  img{
+    width: 650px;
+    margin-top: 6px;
+    height: 492px;
+    
+  }
+    }
+
+
+              //Media Query start//
+
+              
+              @media(max-width:768px){
+                img{
+                  width: 50px;
+                  height: 252px;
+                }
+                &__title h4{
+                  font-size: 30px;
+                
+             
+                }
+             p{
+          
+              font-size: 12px;
+             }
+              }
+              @media(max-width:730px){
+                p{
+                  font-size: 10px;
+                
+             
+                }
+
+              }
+              @media (max-width:685px){
+                img{
+                  display: none;
+                }
+                p{
+                  font-size: 20px;
+                
+             
+                }
+              }
+    @media(max-width: 1505px){
+      &__title h2{
+  
+        font-size: 80px;
+      }
+        &__pic{
+
+            position: absolute;
+            
+            
+           
+            img{
+              width: 550px;
+              
+            }
+    }
+}
+@media(max-width: 1305px){
+  &__title h2{
+  
+    font-size: 60px;
+  }
+  &__pic{
+
+    position: absolute;
+    
+    
+   
+    img{
+      width: 491px;
+      
+      margin-top: -156px;
+      
+    }
+}
+}
+@media(max-width: 1225px){
+    &__pic{
+
+        position: absolute;
+        right: 80px;
+        top: 1058px;
+       
+        img{
+          width: 430px;
+          margin-top: 0px;
+          
+        }
+}
+}
+@media(max-width: 1100px){
+    &__pic{
+
+        position: absolute;
+        right: 40px;
+        
+       
+        img{
+          width: 391px;
+          margin-top: -83px;
+          
+        }
+}
+}
+@media (max-width:1035px){
+  &__title h2{
+  
+    font-size: 46px;
+  }
+}
+
+@media(max-width: 950px){
+    &__pic{
+
+        position: absolute;
+        right: 80px;
+        top: 980px;
+        
+       
+        img{
+          width: 350px;
+          
+        }
+       
+}
+&__title h1{
+    font-size: 50px;
+}
+}
+@media(max-width: 885px){
+    &__pic{
+      right: 40px;
+   
+        
+       
+        img{
+          width: 330px;
+          
+        }
+}
+}
+@media(max-width:810px){
+  &__pic{
+    top: 880px;
+  }
+  img{
+    width: 290px;
+    
+  }
+  &__title h2{
+  
+    font-size: 40px;
+  }
+  
+}
+
+
+
+
+}

@@ -1,0 +1,170 @@
+@import "../../Utiles/Styles/variables.scss";
+.MeatShop{
+max-width: 100%;
+  
+  &__banner{
+    position: relative;
+    img{
+      width: 100%;
+      
+    }
+  }
+  &__banner__black{
+position: absolute;
+top: 0%;}
+  &__title h1{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $colorWhite;
+    font-size: 70px;
+  font-family:"mulish";
+    font-weight: 700;
+
+ 
+
+ 
+  }
+  &__title button{
+    position: absolute;
+    top: 292px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+  p{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    color: $colorWhite;
+    font-size: 17px;
+    font-family:"poppins";
+    font-weight: 300;
+  
+  }
+
+  button{
+     text-align: center;
+    justify-content: center;
+   
+    
+  }
+  .btn{
+    background: $btnColor;
+    text-align: center;
+    justify-content: center;
+    width: 210px;
+    color: $colorWhite;
+    border: none;
+    height: 55px;
+    text-align: center;
+    font-size: 21px;
+    font-family: $mulishFont;
+    font-weight: 600;
+    border-radius: 1px;
+
+  }
+
+
+&__red button{
+  position: absolute;
+  top:93%;
+  left: 50%;
+
+  transform: translate(-50%,-50%); 
+  background: $colorRed;
+  text-align: center;
+  justify-content: center;
+  width: 210px;
+  color: $colorWhite;
+  border: none;
+  height: 45px;
+  text-align: center;
+  font-size: 21px;
+  font-family: $mulishFont;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+
+@media(max-width:768px){
+
+  button{
+    
+    margin-top: -60px;
+  }
+  &__red button{
+    margin-top:-30px ;
+  }
+  p{
+    margin-top: 20px;
+    margin-right: 120px;
+    font-size: 15px;
+  }
+  }
+  @media(max-width: 550px){
+    p{
+      font-size: 11px;
+    }
+    button{
+    
+      margin-top: -110px;
+    }
+    &__red button{
+      margin-top:-30px ;
+      max-width: 125px;
+      height: 50px;
+    }
+    .btn{
+      max-width: 125px;
+      height: 50px;
+    }
+   
+  }
+  @media(max-width: 410px){
+    p{
+      font-size: 8px;
+    }
+    button{
+    
+      margin-top: -140px;
+    }
+    &__red button{
+      margin-top:-40px ;
+      max-width: 95px;
+      height: 35px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+    .btn{
+      max-width: 125px;
+      height: 50px;
+      max-width: 95px;
+      height: 35px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+   
+  }
+
+  @media(max-width: 315px){
+    p{
+      display: none;
+    }
+    button{
+    
+      display: none;
+    }
+    &__red button{
+      display: none;
+    }
+    .btn{
+      display: none;
+    }
+   
+  }
+
+
+  
+   }
