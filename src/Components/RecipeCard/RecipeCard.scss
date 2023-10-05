@@ -1,0 +1,106 @@
+@import "../../Utiles/Styles/variables.scss";
+.RecipeCard{
+   width: 100%;
+height: 100%;
+   text-align: left;
+   min-height: 20vh;
+   background-color: $colorWhite;
+   
+   column-gap: 50px;
+    button{
+      width: 30%;
+      height: 31px;
+      background-color: $colorWhite;;
+      text-align: center;
+      color: $colorRed;
+      border-radius: 20px;
+      border: 3px solid $colorRed;
+      font-size: 14px;
+   
+      
+        
+        
+        
+     }
+     .btn{
+        margin-bottom: 10px;
+     }
+ &__logo img{
+   
+   
+      width: 100%;
+      height: 45vh;
+    
+    
+ }  
+ 
+ .RecipeCardText{
+    display: flex;
+    gap: 6.5rem;
+    &__leftTitle{
+        color: $colorRed;
+        
+        font-size: 24px;
+        font-family: $mainFont;
+        font-weight: 600;
+    }
+    &__rightTitle{
+  color: $colorBlack;
+        font-size: 20px;
+        font-family: $mulishFont;
+        font-weight: 700;
+
+    }
+ }
+ h6{
+    font-size: 16px;
+    
+    margin-top: 0px;
+    font-weight: 300;
+    font-family: $mainFont;
+ }
+@media(max-width: 768px){
+   .RecipeCardText{
+      gap: 0.8rem;
+   }
+   .RecipeCardText__leftTitle{
+      font-size: 15px;
+ 
+
+  
+   }  .RecipeCardText__rightTitle{
+      font-size: 15px;
+      
+   }
+   h6{
+      font-size: 12px;
+   }
+   button{
+      width: 100px;
+   }
+}
+@media(max-width: 610px){
+   .RecipeCardText{
+      gap: 0.8rem;
+   }
+   .RecipeCardText__leftTitle{
+      font-size: 10px;
+ 
+
+  
+   }  .RecipeCardText__rightTitle{
+      font-size: 10px;
+      
+   }
+   h6{
+      font-size: 7px;
+   }
+   button{
+      width: 70px;
+   }
+}
+
+
+
+
+}

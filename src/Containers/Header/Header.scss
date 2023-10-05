@@ -1,0 +1,80 @@
+@import "../../Utiles/Styles/variables.scss";
+.Header {
+    width: 100%;
+    background: $colorBlack;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    
+    &__text {
+      color: $colorWhite;
+      flex: 1;
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+  
+  
+      p {
+        font-weight: 400;
+        font-size: 25px;
+      
+      }
+  
+      span {
+        margin-top: 18px;
+        font-size: 2rem;
+        padding: 13px;
+     
+  
+        &:not(:last-child) {
+          border-right: 2px solid $colorWhite;
+          height: 27px;
+        
+        }
+      }
+    }
+  
+    &__logo {
+    
+      height: auto;
+    
+    }
+
+
+ 
+
+  
+    @media (max-width: 768px) {
+   
+   text-align: center;
+  
+      &__text {
+        display: none;
+  
+        p {
+          display: none;
+        }
+  
+        span {
+          display: none;
+        }
+      }
+  
+      &__logo img{
+       width: 50px;
+      }
+      
+  
+      &__menu {
+        font-size: 3rem;
+        color: $colorWhite;
+        display: block;
+      }
+    }
+    @media (max-width: 250px) {
+flex-direction: column;
+text-align: center;
+    }
+  }
+  
